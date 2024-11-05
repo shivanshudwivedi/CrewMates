@@ -46,9 +46,12 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+[Video Walkthrough on Imgur]((https://imgur.com/a/fIZfbMA))
 
 GIF created with ScreenToGif
+
+https://imgur.com/a/fIZfbMA
+
 
 ## Notes
 
@@ -64,7 +67,7 @@ Describe any challenges encountered while building the app:
 
 ## License
 
-    Copyright [2024] [Your Name]
+    Copyright [2024] [Shivanshu Dwivedi]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
