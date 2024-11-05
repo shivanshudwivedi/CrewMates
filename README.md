@@ -1,50 +1,79 @@
-# React + TypeScript + Vite
+# Web Development Project 7 - *Crewmate Manager*
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Submitted by: **Shivanshu Dwivedi**
 
-Currently, two official plugins are available:
+This web app: **A comprehensive crew management system that allows users to create, update, delete, and view team members with different roles, specialties, and experience levels. The app includes features like filtering, sorting, statistics, and data import/export capabilities.**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Time spent: **12** hours spent in total
 
-## Expanding the ESLint configuration
+## Required Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+The following **required** functionality is completed:
 
-- Configure the top-level `parserOptions` property like this:
+- [x] **A create form allows users to add new cremates**
+- [x] **Users can name the crewmate and set the crewmate's attributes by clicking on one of several values**
+  - [x] Users can set role (Engineer, Designer, Manager)
+  - [x] Users can set specialty (Frontend, Backend, Full Stack, UI/UX)
+  - [x] Users can set experience level (Junior, Mid-Level, Senior)
+- [x] **The site displays a summary page of all the user's added crewmates**
+- [x] **A previously created crewmate can be updated from the crewmate list**
+- [x] **A previously created crewmate can be deleted from the crewmate list**
+  - [x] Includes confirmation dialog for delete actions
+- [x] **Each crewmate has a direct, unique link to an info page about them**
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+The following **optional** features are implemented:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- [x] A crewmate can be given a category upon creation which restricts their attributes
+  - [x] Role selection influences available specialty options
+- [x] The site displays summary statistics about a user's crew on their crew page 
+  - [x] Shows total number of crewmates
+  - [x] Displays role distribution
+  - [x] Shows experience level breakdown
+- [x] The site displays a custom "success" metric about a user's crew which changes the look of the crewmate list
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+The following **additional** features are implemented:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+* [x] Advanced filtering system with multiple criteria
+* [x] Search functionality for crewmate names
+* [x] Pagination for better data management
+* [x] Data import/export functionality
+* [x] Loading states and error handling
+* [x] Responsive design for mobile and desktop
+* [x] Material UI components for a polished look
+* [x] Success/error notifications using snackbars
+
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+
+<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+GIF created with ScreenToGif
+
+## Notes
+
+Describe any challenges encountered while building the app:
+
+- Implementing proper state management for multiple filters
+- Handling data synchronization with Supabase
+- Managing complex form validations
+- Implementing proper error handling for all edge cases
+- Creating responsive design that works well on all screen sizes
+- Setting up proper TypeScript types for all components
+- Managing loading states and user feedback
+
+## License
+
+    Copyright [2024] [Your Name]
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
